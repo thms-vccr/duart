@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carnet du Professeur Duart</title>
+<style>
+    body {
+        background-image: url('parchment.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Georgia', serif;
+        color: #2b1e16;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        text-align: center;
+        background-color: rgba(255, 248, 220, 0.8);
+        padding: 40px;
+        border-bottom: 2px solid #6b4a2b;
+    }
+
+    h1 {
+        font-family: 'Cursive', 'Brush Script MT', sans-serif;
+        font-size: 2.8em;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        border-bottom: 1px solid #6b4a2b;
+        padding-bottom: 4px;
+        margin-top: 40px;
+        font-size: 1.8em;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 30px;
+        background-color: rgba(255, 255, 240, 0.85);
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 8px;
+    }
+
+    .photo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .photo img {
+        border-radius: 10px;
+        width: 250px;
+        height: auto;
+        border: 2px solid #4a3b26;
+    }
+
+    .section {
+        margin-top: 40px;
+    }
+
+    .journal-entry {
+        background-color: rgba(255,255,255,0.6);
+        padding: 15px 20px;
+        margin: 15px 0;
+        border-left: 4px solid #6b4a2b;
+        border-radius: 5px;
+    }
+
+    .journal-entry b {
+        color: #4a3b26;
+    }
+
+    ul {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+
+    .password-section {
+        text-align: center;
+        background-color: rgba(255,248,220,0.8);
+        padding: 30px;
+        margin-top: 50px;
+        border-radius: 10px;
+        border: 1px dashed #6b4a2b;
+    }
+
+    .password-section input[type="password"] {
+        padding: 10px;
+        border: 1px solid #6b4a2b;
+        border-radius: 5px;
+    }
+
+    .password-section button {
+        background-color: #6b4a2b;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .password-section button:hover {
+        background-color: #4a3b26;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 0.9em;
+        color: #3b2c1a;
+        margin-top: 40px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Carnet d’Expédition du Professeur Duart</h1>
+        <p>Explorateur, chercheur et conteur des mystères du monde</p>
+    </header>
+
+    <div class="container">
+        <!-- SECTION 1 : PRÉSENTATION -->
+        <div class="section">
+            <h2>À propos du Professeur Duart</h2>
+            <div class="photo">
+                <img src="Duart.jpg" alt="Photo du Professeur Duart">
+            </div>
+            <p>
+                Né à <b>Porto</b> en 1971, <b>Joseph Duart</b> est un chercheur franco-portugais, explorateur infatigable des mystères anciens. 
+                Diplômé en anthropologie et archéologie à l’<b>Université de Coimbra</b>, il s’est illustré par ses travaux mêlant 
+                <i>histoire, symbolique et phénomènes paranormaux</i>.  
+            </p>
+            <p>
+                Membre fondateur du <b>Cercle Atlantique d’Archéologie Occulte</b>, il a sillonné le monde – du <b>Népal</b> à l’<b>Amazonie</b> – 
+                en quête de traces de la mythique “Fraternité de la Lumière”.  
+                Ses proches collaborateurs incluent <b>le Professeur Ortega</b> (Université de Madrid) et <b>la Docteure Livia Samir</b> (Institut du Caire), 
+                avec qui il a mis au jour, en 2019, le mystérieux <i>Codex de Cusco</i>.  
+            </p>
+            <p>
+                De retour d’un voyage en <b>Amérique latine</b>, il s’est récemment installé à <b>Lisbonne</b> pour poursuivre une nouvelle enquête, 
+                liant l’héritage inca aux légendes portugaises.
+            </p>
+        </div>
+
+        <!-- SECTION 2 : BONS PLANS LISBONNE -->
+        <div class="section">
+            <h2>Les Bons Plans à Lisbonne</h2>
+            <h3>🎶 Bars à Fado</h3>
+            <ul>
+                <li><b>Clube de Fado</b> – Au cœur de l’Alfama, voix envoûtantes et vin du Douro.</li>
+                <li><b>Tasca do Chico</b> – Ambiance populaire, Fado vespéral, sardines grillées.</li>
+                <li><b>A Baiuca</b> – L’âme du vieux Lisbonne dans une ruelle pavée.</li>
+            </ul>
+
+            <h3>🍴 Restaurants & Plats typiques</h3>
+            <ul>
+                <li><b>Time Out Market</b> – Un temple gastronomique moderne.</li>
+                <li><b>Ramiro</b> – Fruits de mer mythiques, ne pas manquer les gambas à l’ail.</li>
+                <li><b>Cervejaria Trindade</b> – Ancien couvent, azulejos et morue à la crème.</li>
+                <li>À goûter absolument : <b>pastéis de nata</b>, <b>bacalhau à brás</b>, <b>caldo verde</b>, <b>ginjinha</b>.</li>
+            </ul>
+
+            <h3>🏛️ Lieux et Activités</h3>
+            <ul>
+                <li><b>Belém</b> – Tour, monastère, et le musée des découvertes.</li>
+                <li><b>Alfama</b> – Quartier labyrinthique, cœur du Fado et des mystères.</li>
+                <li><b>Sintra</b> – Palais de contes et forêts de brume à 30 min de train.</li>
+                <li><b>Miradouro de Santa Luzia</b> – Vue imprenable sur le Tage au coucher du soleil.</li>
+            </ul>
+        </div>
+
+        <!-- SECTION 3 : JOURNAL DE BORD -->
+        <div class="section">
+            <h2>Extraits du Carnet de Bord</h2>
+            <div class="journal-entry">
+                <p>
+<li><b>07.06.2025</b> : Ce matin, dans le calme de mon appartement parisien, entouré de piles de livres jaunis et de cartes froissées ramenées d'Amazonie, mon téléphone a rompu le silence comme un écho du passé. C'était Ortega, sa voix vibrante d'urgence, presque un chuchotement chargé de mystères. "Joseph, écoute bien : j'ai retrouvé un symbole identique à celui du manuscrit de Cusco, gravé sur une pierre exhumée lors de fouilles à Lisbonne. Ce n'est pas un hasard. La fraternité a laissé sa marque en Europe, et ça nous appelle." Un frisson m'a traversé, évoquant les ombres des temples népalais se mêlant à la brume de la Seine. Je lui ai promis de plonger dans les archives, mais mon esprit s'égarait déjà vers l'horizon ibérique. 
+ </p>
+<li><b>15.06.2025</b> : J'ai consacré la journée à décortiquer les photos qu'Ortega m'a envoyées par mail, depuis son bureau madrilène. Cette pierre basaltique, érodée par les siècles, porte une spirale – la "lumière du savoir" incrustée dans la roche comme un serment éternel. En fin d'après-midi, j'ai appelé Livia, qui grattait la poussière égyptienne près de Gizeh, le vent du désert rugissant en toile de fond. "C'est captivant, Joseph, mais garde les yeux ouverts : ces gardiens n'apprécient guère les intrus," m'a-t-elle averti avec ce sourire en coin que j'imaginais. Sa prudence m'a fait sourire à mon tour, pourtant je sais qu'elle voit juste. Demain, je fouille les réserves du Louvre pour des connexions entre l'Inca et les expéditions portugaises. 
+ </p>
+<li><b>14.07.2025</b> : La fête nationale française illumine Paris d'un éclat festif, avec les feux d'artifice qui dansent sur la Tour Eiffel comme des esprits libérés. Au milieu de la foule en liesse, je me suis faufilé dans une petite librairie ésotérique du Marais, où l'odeur d'encens et de papier ancien m'a enveloppé comme un voile. Là, entre des volumes oubliés, j'ai déniché un grimoire relié de cuir patiné, ses pages murmurant d'un "passage de lumière" veillé par une confrérie engloutie depuis le XVIe siècle. Les motifs s'alignent presque à la perfection avec ceux de Cusco. Mon pouls s'est emballé – était-ce le champagne des festivités ou le souffle de l'Histoire ? Je l'ai glissé sous mon bras, rentrant sous la pluie fine de la nuit parisienne. 
+ </p>
+<li><b>20.07.2025</b> : Quelques jours après cette trouvaille, j'ai réuni Ortega et Livia en visioconférence, depuis mon bureau improvisé avec vue sur les toits de Montmartre. Ortega, avec son espagnol rugueux et passionné, a disséqué le texte : "Du portugais archaïque teinté d'hébreu séfarade – les exilés d'Espagne ont porté ces secrets jusqu'aux ports atlantiques." Livia, toujours terre-à-terre, a déployé une carte virtuelle : "Lisbonne était un melting-pot, Joseph. Fouille les synagogues enfouies de l'Alfama." Leur énergie m'a regonflé les veines, mais une ombre s'est glissée : et si d'autres traquaient ce savoir ? J'ai noté de contacter un archiviste français pour une analyse discrète. 
+ </p>
+<li><b>02.08.2025</b> : L'été parisien pèse lourd, avec son humidité qui colle aux pages de mes carnets comme un avertissement. Après des nuits à entrelacer les indices dans mon petit appartement du Quartier Latin, j'ai décidé qu'il était temps d'agir sur le terrain. J'ai réservé un billet pour Lisbonne, départ mi-octobre – pas avant, pour peaufiner les préparatifs ici, en France. En attendant, un mail à un collègue du Musée de l'Homme : "Infos sur des artefacts incas en Ibérie ? Discrétion absolue." Sa réponse lapidaire : "Passionnant. On en discute à ton arrivée." Le voyage se profile, lent et délibéré. 
+ </p>
+<li><b>10.08.2025</b> : Une balade vespérale le long de la Seine m'a offert une respiration bienvenue, les reflets des lumières sur l'eau chassant un instant les énigmes. Mais la nuit a apporté un rêve fiévreux : des visions de ruines égyptiennes se fondant aux pentes incas, sous un ciel étoilé de mystères. Au réveil, j'ai ajouté une note à mon journal : la "fraternité" pourrait s'enraciner chez les Templiers, chassés vers ces rivages après leur chute. Demain, je reprends le manuscrit de Cusco pour valider. 
+ </p>
+<li><b>12.09.2025</b> : Avant les ultimes préparatifs, j'ai rejoint Livia pour un déjeuner express à Paris, près de la Sorbonne. Assis à une terrasse bruissante de feuilles automnales, entre salades et cafés serrés, je lui ai livré mes incertitudes : "Et si c'était encore une impasse ?" Elle a effleuré ma main, ses yeux d'archéologue scintillant : "Consigne tout, Joseph. Monte un site sécurisé pour tes notes, tes scans, tes photos. Ça fluidifiera nos échanges à distance, et si le voile se lève, on partagera sans péril." Son idée illumine ; ce soir, je bâti le squelette numérique. Lisbonne attend, mais la France me retient encore un peu. 
+ </p>
+<li><b>18.09.2025</b>: Les valises presque bouclées, j'ai tracé une carte mentale depuis mon bureau : Alfama pour les grimoires enfouis, Belém pour les échos maritimes, et les catacombes secrètes pour les signes gravés. Un appel d'Ortega m'a surpris en pleine rédaction : "Prépare-toi, amigo – ce symbole lisboète est la clé." En rangeant mes reliques, je sens le poids du départ se faire doux, comme une promesse. 
+ </p>
+<li><b>15.10.2025</b> : Enfin, le vol pour Lisbonne, au milieu des nuages qui s'effilochent comme des voiles anciens. L'avion tangue doucement, et je relis mes notes, bercé par le ronron des moteurs. Un hublot sur l'Atlantique, et déjà l'excitation monte : la ville des sept collines m'appelle. À l'atterrissage, sous un ciel d'octobre doré, l'air salin m'enveloppe comme une étreinte. Mon hôtel dans le Bairro Alto craque d'histoires – planchers usés, fado lointain. Premier rituel : une pâtisserie pour des pastéis de nata tièdes, leur croustillant sucré effaçant les miles de distance. Demain, l'Alfama m'engloutira. 
+ </p>
+<li><b>22.10.2025</b> : Une semaine s'est écoulée dans le labyrinthe lisboète, et l'ivresse initiale cède à une impatience feutrée. J'ai sillonné l'Alfama de l'aube au crépuscule, questionnant des boutiquiers aux regards madrés : "Un grimoire sur une confrérie ? Essayez le marché aux puces." Peu de pistes solides, juste des contes susurrés sur des trésors dormants. Mon site web palpite : scans cryptés uploadés pour Ortega et Livia. Ce soir, un fado éraillé dans un bouge enfumé m'a noué la gorge – comme si Lisbonne elle-même chantait ses secrets enfouis. Pourtant, une intuition tenace : le fil se tend, invisible mais palpable. 
+ </p>
+<li><b>23.10.2025</b> : l'appel d'Ortega ce matin, depuis Madrid, grésille d'impatience : "J'arrive le 26, mais vu mon atterrissage tardif, reportons au 28. Apporte le grimoire ; on le vivisectera." Cela m'offre du temps pour sonder : synagogues occultes, bibliothèques jésuites, et une échappée à Sintra pour ses légendes celtiques. J'alimente mon carnet numérique de croquis de la pierre. Les nuits tombent vite ; les ombres s'étirent, emportant mes rêves. 
+ </p>
+<li><b>26.10.2025</b> : Rencontre fortuite avec Rui, l'historien du musée, un homme courbé par les ans mais vif comme une lame. Café au bord du Tage miroitant, il déploie des archives pixellisées : "Cette pierre ? 1492, ère des Grandes Découvertes. Et le symbole... il hante les cartes de Vasco de Gama." Mon sang bout ; on échange contacts. Livia m'écrit : "Avancées ? Photos !" Je lui renvoie une vue du château Saint-Georges, gardant les joyaux pour plus tard. 
+ </p>
+<li><b>28.10.2025</b> : Correction : Ortega a atterri hier, barbu et chargé, son sac gonflé de rouleaux. Réunion à l'hôtel sur un dîner tardif : vinho verde frais, morue fumante, entre éclats de rire et hypothèses audacieuses. "La fraternité ne dort pas, Joseph – elle veille." Aujourd'hui, on a inspecté le site de la pierre : un chantier anodin, mais sous la gravure, une faille scellée. Demain, on force l'entrée (avec permis). L'air crépitante d'électricité ; Lisbonne nous adopte comme des fils prodigues. 
+ </p>
+<li><b>03.11.2025</b> : La pluie d'automne fouette Lisbonne, transformant les pavés en éclats de miroir. Refuge dans une librairie nichée près de la Sé, où une aïeule m'a refilé un libelle anonyme sur les "gardiens de la lumière" – des liens filés entre l'Amérique et les quais ibériques. Scans d'un codex d'Ortega en renfort ; le puzzle s'emboîte. Livia en visio : "Méfie-toi des mirages. Et les sardines grillées, pour moi ?" 
+ </p>
+<li><b>05.11.2025</b> : Une semaine aux côtés d'Ortega, et les astres conspirent. On a percé une phrase du grimoire : "La lumière rayonne où les sept collines s'inclinent." Les sept de Lisbonne ! Cartographie frénétique, contournant les hordes touristiques. Incident vespéral : une silhouette nous file dans une venelle – hasard ? J'alerte Livia ; elle atterrit fin novembre. La trame se resserre, frémissante. 
+</p>
+<li><b>10.11.2025</b> : Ortega est rentré pour un symposium, me laissant avec des pages griffonnées et un tête-à-tête chez un numismate pour des monnaies incas en Algarve. La solitude alourdit, mais le site vrombit : trois indices neufs. Un mail fantôme ce matin : "Cessez de creuser." Avertissement ou leurre ? Verrous renforcés. Pourtant, je tiens bon – la vérité effleure. 
+ </p>
+<li><b>12.11.2025</b> : Ce soir, par un ciel exceptionnellement clair, j'ai gravi une colline pour contempler. Le Tage ondule comme un serpent d'argent, et dans la brise, j'entends presque les voix de la fraternité. Livia dans trois jours ; Ortega jure un retour prompt. L'enquête patine en surface, mais bouillonne en profondeur. Lisbonne n'est plus un refuge – c'est le pouls du secret. Demain, on effleure l'abîme."
+                </p>
+            </div>
+        </div>
+
+    <!-- SECTION 4 : ACCÈS TRAVAUX EN COURS -->
+    <div class="motdepasse">
+      <h2>Accès aux travaux en cours</h2>
+      <input type="password" id="password" placeholder="Mot de passe">
+      <button id="enter-btn">Entrer</button>
+      <div id="error-message"></div>
+    </div>
+
+  </div>
+
+  <script>
+    const correctPassword = "TAGE";
+    document.getElementById("enter-btn").addEventListener("click", () => {
+      const input = document.getElementById("password").value.trim();
+      const errorMessage = document.getElementById("error-message");
+
+      if (input.toLowerCase() === correctPassword.toLowerCase()) {
+        errorMessage.style.color = "green";
+        errorMessage.textContent = "Accès autorisé...";
+        setTimeout(() => {
+          window.location.href = "travaux.html";
+        }, 1000);
+      } else {
+        errorMessage.style.color = "red";
+        errorMessage.textContent = "Mot de passe incorrect.";
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+        <footer>
+            <p>© 2025 Carnet du Professeur Duart – Tous droits réservés</p>
+        </footer>
+    </div>
+</body>
+</html>
+

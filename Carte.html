@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte au trésor – Professeur Duart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #f4ecd8; /* Papier vieilli */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: 'Special Elite', monospace;
+      color: #3b2f2f;
+      background-image: url('taches-encre.png'); /* optionnel, pour taches d'encre */
+      background-repeat: repeat;
+      background-size: contain;
+    }
+
+    .carte-container {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .carte-container img {
+      max-width: 95%;
+      max-height: 90%;
+      border: 4px solid #8b5e3c;
+      border-radius: 8px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .bouton-retour {
+      margin: 20px;
+      padding: 10px 20px;
+      background-color: #8b5e3c;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-family: 'Special Elite', monospace;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-decoration: none;
+    }
+
+    .bouton-retour:hover {
+      background-color: #a17350;
+    }
+
+    @media (max-width: 768px) {
+      .carte-container img {
+        max-height: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carte-container">
+    <img src="carte.jpg" alt="Carte Lisbonne">
+  </div>
+
+  <a href="travaux.html" class="bouton-retour">← Retour au carnet</a>
+
+</body>
+</html>
+
