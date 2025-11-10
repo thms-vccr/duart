@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accès protégé</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    img {
+      max-width: 200px;
+      border-radius: 6px;
+      margin-bottom: 20px;
+    }
+    input[type="password"] {
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 8px 14px;
+      background-color: #444;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #666;
+    }
+    #error-message {
+      color: red;
+      margin-top: 10px;
+      font-size: 14px;
+      height: 18px; /* pour que le bloc garde sa place même sans texte */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- IMAGE (tu changeras le src plus tard) -->
+  <img src="Statue.jpg" alt="image placeholder">
+
+  <!-- CHAMP DE MOT DE PASSE -->
+  <input type="password" id="password" placeholder="Mot de passe">
+
+  <!-- BOUTON D’ENTRÉE -->
+  <button id="enter-btn">Entrer</button>
+
+  <!-- MESSAGE D’ERREUR -->
+  <div id="error-message"></div>
+
+  <script>
+    // Mot de passe défini
+    const correctPassword = "JOSEPH";
+
+    document.getElementById("enter-btn").addEventListener("click", () => {
+      const input = document.getElementById("password").value.trim();
+      const errorMessage = document.getElementById("error-message");
+
+      // Comparaison insensible à la casse
+      if (input.toLowerCase() === correctPassword.toLowerCase()) {
+        errorMessage.style.color = "lime";
+        errorMessage.textContent = "Accès autorisé !";
+
+        // Redirection vers une nouvelle page après 1 seconde
+        setTimeout(() => {
+          window.location.href = "duart.html";
+        }, 1000);
+      } else {
+        errorMessage.style.color = "red";
+        errorMessage.textContent = "Mot de passe incorrect. Quel est mon prénom ?";
+      }
+    });
+  </script>
+
+</body>
+</html>
+
